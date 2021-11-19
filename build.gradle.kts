@@ -21,9 +21,8 @@ kotlin {
         }
     }
     js(IR) {
-        browser {
-
-        }
+        browser()
+        useCommonJs()
     }
     val hostOs = System.getProperty("os.name")
     val isMingwX64 = hostOs.startsWith("Windows")
